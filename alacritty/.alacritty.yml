@@ -5,7 +5,7 @@ window:
    title: Terminal
    dynamic_title: true
    history: 100000
-   opacity: 0.99
+   opacity: 0.97
 
 font:
   size: 11
