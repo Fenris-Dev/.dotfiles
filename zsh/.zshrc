@@ -108,3 +108,5 @@ alias idea="idea.sh "
 export PATH=$PATH:"/opt/rider/bin"
 export PATH=$PATH:"/opt/idea-IC-223.8214.52/bin"
 
+eval "$(starship init zsh)"
+
