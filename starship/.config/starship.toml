@@ -1,8 +1,129 @@
-[line_break]
-disabled = true
+
+format = """
+$directory\
+[](fg:#4974ad bg:#5b3b61)\
+$git_branch\
+$git_status\
+[](fg:#5b3b61 bg:#362840)\
+$c\
+$elixir\
+$elm\
+$golang\
+$haskell\
+$java\
+$julia\
+$nodejs\
+$nim\
+$rust\
+$scala\
+$dotnet\
+[](fg:#362840 bg:#271d30)\ 
+$package\
+$gradle\
+[ ](fg:#271d30)\
+
+"""
+#LL : ~4974ad
+#LD : ~5b3b61
+#DL : ~362840
+#DD : ~271d30
+
 
 [directory]
+style = "bg:#4974ad"
+format = "[ $path ]($style)"
 truncate_to_repo = false
+truncation_length = 3
+truncation_symbol = "…/"
+
+# Here is how you can shorten some long paths by text replacement
+# similar to mapped_locations in Oh My Posh:
+[directory.substitutions]
+"Documents" = " "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+#"dev" = "󰞷 "
+# Keep in mind that the order matters. For example:
+# "Important Documents" = "  "
+# will not be replaced, because "Documents" was already substituted before.
+# So either put "Important Documents" before "Documents" or use the substituted version:
+# "Important  " = "  "
+
+# === GIT ===
+[git_branch]
+symbol = ""
+style = "bg:#5b3b61"
+format = '[ $symbol $branch ]($style)'
 
 [git_status]
-ahead = '⇡${count}'
+style = "bg:#5b3b61"
+format = '[$all_status$ahead_behind ]($style)'
+
+
+
+# === BUILDERS ===
+[package]
+style = "bg:#271d30"
+format = '[ $symbol($version) ]($style)'
+
+[gradle]
+style = "bg:#271d30"
+format = '[ $symbol ($version) ]($style)'
+
+[cmake]
+style = "bg:#271d30"
+format = '[ $symbol ($version) ]($style)'
+
+
+
+# === LANG ===
+[c]
+style = "bg:#362840"
+format = '[ $symbol ($version) ]($style)'
+
+[dotnet]
+style = "bg:#362840"
+format = '[ $symbol ($version) ]($style)'
+
+
+[elixir]
+style = "bg:#362840"
+format = '[ $symbol ($version) ]($style)'
+
+[elm]
+style = "bg:#362840"
+format = '[ $symbol ($version) ]($style)'
+
+[golang]
+style = "bg:#362840"
+format = '[ $symbol ($version) ]($style)'
+
+[haskell]
+style = "bg:#362840"
+format = '[ $symbol ($version) ]($style)'
+
+[java]
+style = "bg:#362840"
+format = '[ $symbol ($version) ]($style)'
+
+[julia]
+style = "bg:#362840"
+format = '[ $symbol ($version) ]($style)'
+
+[nodejs]
+style = "bg:#362840"
+format = '[ $symbol ($version) ]($style)'
+
+[nim]
+style = "bg:#362840"
+format = '[ $symbol ($version) ]($style)'
+
+[rust]
+style = "bg:#362840"
+format = '[ $symbol($version) ]($style)'
+
+[scala]
+symbol = " "
+style = "bg:#362840"
+format = '[ $symbol ($version) ]($style)'
