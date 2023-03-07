@@ -1,4 +1,33 @@
 local lsp = require("lsp-zero")
+local kind_icons = {
+	Text = "",
+	Method = "",
+	Function = "",
+	Constructor = "",
+	Field = "ﰠ",
+	Variable = "",
+	Class = "ﴯ",
+	Interface = "",
+	Module = "",
+	Property = "ﰠ",
+	Unit = "塞",
+	Value = "",
+	Enum = "",
+	Keyword = "",
+	Snippet = "",
+	Color = "",
+	File = "",
+	Reference = "",
+
+	Folder = "",
+	EnumMember = "",
+	Constant = "",
+	Struct = "פּ",
+	Event = "",
+	Operator = "",
+
+	TypeParameter = ""
+}
 
 lsp.preset("recommended")
 
@@ -32,15 +61,33 @@ cmp_mappings['<Tab>'] = nil
 cmp_mappings['<S-Tab>'] = nil
 
 lsp.setup_nvim_cmp({
-  mapping = cmp_mappings,
-  source = {
-      {name = "nvim_lsp"},
-      {name = "treesitter"},
-      {name = "nvim_lua"},
-      {name = "luasnip"},
-      {name = "path"},
-      {name = "buffer", keyword_length = 3},
-  }
+    mapping = cmp_mappings,
+    source = {
+        {name = "nvim_lsp"},
+        {name = "treesitter"},
+        {name = "nvim_lua"},
+        {name = "luasnip"},
+        {name = "path"},
+        {name = "buffer", keyword_length = 3},
+    },
+    formatting = {
+        format = function(entry, vim_item)
+            --> Kind icons
+            vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
+            --> Source
+            --vim_item.menu = ({
+                --    nvim_lsp = "מּ",
+                --    nvim_lua = "",
+                --   treesitter = "",
+
+                --    path = "",
+                --    buffer = "﬘",
+                --    lunasnip= "",
+                --})[entry.source.name]
+
+                return vim_item
+            end,
+    }
 })
 
 lsp.set_preferences({
