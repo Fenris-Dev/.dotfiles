@@ -3,3 +3,6 @@ disabled = true
 
 [directory]
 truncate_to_repo = false
+
+[git_status]
+ahead = '⇡${count}'
