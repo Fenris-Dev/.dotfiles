@@ -1,0 +1,135 @@
+{
+  "sections": [
+    {
+      "keywords": [ "cmd" ],
+      "keys": null, 
+      "commands": [
+        [ "dust", "summarises disk usage of the set target" ],
+        [ "neofetch", "display information about the system" ],
+        [ "exa", "like ls, but better" ],
+        [ "fd", "find entries in the filesystem" ],
+        [ "tokei", "count code" ],
+        [ "procs", "like ps but better" ],
+        [ "rg", "like grep but better" ]
+      ]
+    },
+    {
+      "keywords": [ "i3" ],
+      "keys": [
+        [ "mod+return", "open alacritty" ],
+        [ "mod+backspace", "kill focused window" ],
+        [ "mod+d", "open dmenu" ],
+        [ "mod+h|j|k|l", "change focus" ],
+        [ "mod+shift+h|j|k|l", "move focus" ],
+        [ "mod+s", "horizontal split" ],
+        [ "mod+v", "vertical split" ],
+        [ "mod+f", "toggle fullscreen on focused" ],
+        [ "mod+w", "stacking layout" ],
+        [ "mod+t", "tabbed layout" ],
+        [ "mod+e", "toggle layout split" ],
+        [ "mod+shift+space", "toggle floating" ],
+        [ "mod+a", "focus parent container" ],
+        [ "mod+(1..0)", "switch workspace" ],
+        [ "mod+shift+(1..0)", "move focused to workspace" ],
+        [ "mod+c", "reload i3 config" ],
+        [ "mod+r", "restart i3" ],
+        [ "mod+shift+e", "logout prompt" ],
+        [ "mod+r", "resize mode" ],
+        [ "resize+h|j|k|l", "resizing" ]
+      ],
+      "commands": null
+    },
+    {
+      "keywords": [ "nvim" ],
+      "keys": [
+        [ "n: <leader>pv", "open explorer" ],
+        [ "v: J", "move selection down" ],
+        [ "v: K", "move selection up" ],
+        [ "n: J", "apend line below, to the end of the current line" ],
+        [ "n: <c-d>", "page down" ],
+        [ "n: <c-u>", "page up" ],
+        [ "n: n", "next search" ],
+        [ "n: N", "prevous search" ],
+        [ "x: <leader>p", "pastes over selection, without copying" ],
+        [ "n|v: <leader>y", "copys to clipboard" ],
+        [ "n: <leader>Y", "unknown" ],
+        [ "n|v: <leader>d", "delete selection, without copying" ],
+        [ "i: <C-c>", "acts like escape?" ],
+        [ "n: <C-f>", "tmux sessionizer" ],
+        [ "n: <leader>f", "format" ],
+        [ "n: <C-k>", "unknown next" ],
+        [ "n: <C-j>", "unknown previous" ],
+        [ "n: <leader>k", "unknown next" ],
+        [ "n: <leader>j", "unknown previous" ],
+        [ "n: <leader>s", "replace hovered text:  regex(:%s/)" ],
+        [ "n: <leader>x", "give execute promission: chmod +x" ],
+        [ "n: <leader>vpp", "opens up packer config" ]
+      ],
+      "commands": [
+        [ ":so", "source file"]
+      ]
+    },
+    {
+      "keywords": [ "cmp", "nvim" ],
+      "keys": [
+        [ "<C-p>", "select previous item" ],
+        [ "<C-n>", "Select next item"],
+        [ "<C-y>", "confirm selection"],
+        [ "<C-Space>", "complete"]
+      ],
+      "commands": null 
+    },
+    {
+      "keywords": [ "lsp", "nvim" ],
+      "keys": [
+        [ "n: gd", "goto definition" ],
+        [ "n: K", "show hover tooltip" ],
+        [ "n: <leader>vws", "workspace symbol" ],
+        [ "n: <leader>vd", "open floating diagnostics" ],
+        [ "n: [d", "goto next diagnostics" ],
+        [ "n: ]d", "goto previous diagnostics" ],
+        [ "n: <leader>vca", "code action" ],
+        [ "n: <leader>vrr", "show all references" ],
+        [ "n: <leader>vrn", "rename" ],
+        [ "n: <C-h>", "signature help" ]
+      ],
+      "commands": null 
+    },
+    {
+      "keywords": [ "telescope", "nvim" ],
+      "keys": [
+        [ "n: <leader>pf", "find files" ],
+        [ "n: <C-p>", "git files" ],
+        [ "n: <leader>ps", "search for input" ],
+        [ "n: <leader>vh", "show help tags" ]
+      ],
+      "commands": null 
+    },
+    {
+      "keywords": [ "fugitive", "nvim" ],
+      "keys": [
+        [ "n: <leader>gs", "show git" ]
+      ],
+      "commands": null 
+    },
+    {
+      "keywords": [ "undotree", "nvim" ],
+      "keys": [
+        [ "n: <leader>u", "show undo tree" ]
+      ],
+      "commands": null 
+    },
+    {
+      "keywords": [ "harpoon", "nvim" ],
+      "keys": [
+        [ "n: <leader>a", "add file to harpoon" ],
+        [ "n: <leader>e", "show quick menu" ],
+        [ "n: <C-h>", "navigate to harpoon file 1" ],
+        [ "n: <C-j>", "navigate to harpoon file 2" ],
+        [ "n: <C-k>", "navigate to harpoon file 3" ],
+        [ "n: <C-l>", "navigate to harpoon file 4" ]
+      ],
+      "commands": null 
+    }
+  ]
+}
