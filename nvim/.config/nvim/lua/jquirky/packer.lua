@@ -6,7 +6,7 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   -- Packer can manage itself
     use 'wbthomason/packer.nvim'
-    
+ 
     -- Themes
     use { "ayu-theme/ayu-vim"}
     use { "catppuccin/nvim", as = "catppuccin" }
@@ -28,7 +28,11 @@ return require('packer').startup(function(use)
     use('ThePrimeagen/harpoon')
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
-
+    use('j-hui/fidget.nvim')
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
 
     use {
         'VonHeikemen/lsp-zero.nvim',

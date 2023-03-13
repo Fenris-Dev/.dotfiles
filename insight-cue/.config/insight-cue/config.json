@@ -83,16 +83,19 @@
     {
       "keywords": [ "lsp", "nvim" ],
       "keys": [
+        [ "n: gD", "goto declaration" ],
         [ "n: gd", "goto definition" ],
+        [ "n: gi", "goto implementation" ],
+        [ "n: <C-k>", "signature help" ],
         [ "n: K", "show hover tooltip" ],
         [ "n: <leader>vws", "workspace symbol" ],
-        [ "n: <leader>vd", "open floating diagnostics" ],
+        [ "n: <leader>q", "open floating diagnostics" ],
         [ "n: [d", "goto next diagnostics" ],
         [ "n: ]d", "goto previous diagnostics" ],
-        [ "n: <leader>vca", "code action" ],
-        [ "n: <leader>vrr", "show all references" ],
-        [ "n: <leader>vrn", "rename" ],
-        [ "n: <C-h>", "signature help" ]
+        [ "n: <leader>a", "code action" ],
+        [ "n: gr", "show all references" ],
+        [ "n: <leader>r", "rename" ],
+        [ "n: <leader>D", "goto type definition" ]
       ],
       "commands": null 
     },
