@@ -10,7 +10,8 @@
         [ "fd", "find entries in the filesystem" ],
         [ "tokei", "count code" ],
         [ "procs", "like ps but better" ],
-        [ "rg", "like grep but better" ]
+        [ "rg", "like grep but better" ],
+        [ "btop", "like htop but looks better" ]
       ]
     },
     {

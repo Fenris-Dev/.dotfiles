@@ -8,6 +8,7 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     
     -- Themes
+    use { "ayu-theme/ayu-vim"}
     use { "catppuccin/nvim", as = "catppuccin" }
     use({
         'rose-pine/neovim',
@@ -17,7 +18,6 @@ return require('packer').startup(function(use)
             vim.cmd('colorscheme rose-pine')
         end
     })
-
 
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.1',
