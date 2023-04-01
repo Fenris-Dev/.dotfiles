@@ -32,3 +32,7 @@ vim.opt.timeoutlen = 300
 vim.opt.colorcolumn = "80"
 
 vim.cmd "set noshowmode"
+vim.cmd "set pumheight=25"
+vim.opt.mouse = "a"
+vim.opt.completeopt = 'menu,menuone,noselect'
+vim.opt.cmdheight = 1
