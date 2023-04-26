@@ -109,8 +109,12 @@ alias zettel="cd ~/-zettelkasten/"
 alias idea="idea.sh "
 alias vim="nvim"
 
+export ANSIBLE_CONFIG=~/.dotfiles/ansible/ansible.cfg
 export PATH=$PATH:"/opt/rider/bin"
 export PATH=$PATH:"/opt/idea-IC-223.8214.52/bin"
+export PATH=$PATH:/home/$USER/.local/bin
+
+export TERM=screen-256color
 
 eval "$(starship init zsh)"
 

@@ -39,6 +39,11 @@ return require('packer').startup(function(use)
     use "lukas-reineke/indent-blankline.nvim"
 
     use {
+        "folke/todo-comments.nvim",
+        requires = "nvim-lua/plenary.nvim"
+    }
+
+    use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
         requires = {

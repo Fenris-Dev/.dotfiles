@@ -37,7 +37,10 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/.config/nvim/lua/jquirky/packer.lua<CR>");
 vim.keymap.set("n", "<leader>vpsl", "<cmd>so ~/.dotfiles/nvim/.config/nvim/after/plugin/lsp.lua<CR>");
 
-
 -- course
 vim.keymap.set("n", " ", "<nop>") -- removes annoying space jumping
 -- vimkeymap.set("n", "<leader>po", "<cmd>Vex<CR>")
+
+
+
+vim.keymap.set('n', 'ct', "<cmd>TodoTelescope<CR>")
